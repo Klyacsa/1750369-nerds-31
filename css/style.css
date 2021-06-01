@@ -6,6 +6,12 @@
   --basic-red: #FB565A;
   --medium-red: #E74246;
   --extra-red: #D7373B;
+  --basic-green: #00CA74;
+  --medium-green: #00BC6C;
+  --extra-green: #00AA62;
+  --basic-yellow: #EFC849;
+  --medium-yellow: #EAB534;
+  --extra-yellow: #E5A722;
 }
 
 /* Что это и зачем? Что очистить?
@@ -28,7 +34,8 @@ body {
   background-color: var(--basic-white);
 }
 
-span {
+.container-description span,
+.container-achievements span {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -47,14 +54,6 @@ img {
 .main-header {
   background-color: var(--basic-gray);
 }
-
-.main-nav {}
-
-.main-header-logo {}
-
-.main-header-logo:hover {}
-
-.main-header-logo:active {}
 
 .site-menu {
   list-style: none;
@@ -101,8 +100,6 @@ img {
 
 /*Main offers*/
 
-.container {}
-
 .container-offers {}
 
 .button {
@@ -123,14 +120,14 @@ img {
 }
 
 .button-green {
-  background-color: #00CA74;
+  background-color: var(--basic-green);
 }
 .button-green:hover {
-  background-color: #00BC6C;
+  background-color: var(--medium-green);
 }
 
 .button-green:active {
-  background-color: #00AA62;
+  background-color: var(--extra-green);
 }
 
 .button-yellow {
@@ -160,10 +157,6 @@ img {
 .friends {
   list-style: none;
 }
-
-.friends li:hover,
-.friends li:focus,
-.friends li:active {}
 
 /*Footer*/
 
@@ -198,22 +191,11 @@ img {
 
 /*Modal window*/
 
-.modal {}
-
 .modal h2 {
 font-size: 45px;
 font-weight: 700;
 line-height: 53px;
 }
-
-.modal-form input,
-.modal-form input:hover,
-.modal-form input:focus,
-.modal-form input:invalid {}
-
-.button-close:hover,
-.button-close:focus,
-.button-close:active {}
 
 .label-title {
 font-size: 16px;
