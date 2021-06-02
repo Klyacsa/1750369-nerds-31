@@ -4,6 +4,8 @@
   --footer-text-dark: #444444;
   --basic-white: #ffffff;
   --basic-gray: #EEEEEE;
+  --medium-gray: #DFDFDF;
+  --extra-gray: #D5D5D5;
   --social-background-gray: #E1E1E1;
   --basic-red: #FB565A;
   --medium-red: #E74246;
@@ -37,6 +39,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 /*Header*/
@@ -75,15 +81,24 @@ img {
   color: var(--basic-gray);
 }
 
-.hidden {
-  display: none;
-}
-
 .offer-slider {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
+}
+
+.catalog-title {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.site-menu .market {
+  text-decoration: underline;
+  text-decoration-color: var(--basic-red);
+  text-decoration-style: solid;
 }
 
 /*Main offers*/
@@ -189,4 +204,58 @@ line-height: 53px;
 font-size: 16px;
 font-weight: 700;
 line-height: 18px;
+}
+
+/*Main catalog*/
+
+.catalog-filter legend,
+.catalog-sorting p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button-gray {
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.button-gray:hover {
+  background-color: var(--medium-gray);
+}
+
+.button-gray:active {
+  background-color: var(--extra-gray);
+}
+
+.catalog-filter label {
+  line-height: 20px;
+  color: var(--basic-dark);
+}
+
+.catalog-filter p {
+  font-weight: 400;
+  color: var(--basic-dark);
+  text-transform: uppercase;
+}
+
+.catalog-sorting ul,
+.list-templates ul {
+  list-style: none;
+}
+
+.catalog-sorting li {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination .button-activ {
+  border: var(--basic-gray) 1px solid;
 }
