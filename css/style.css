@@ -1,8 +1,10 @@
 :root {
   --basic-black: #000000;
   --basic-dark: #283136;
+  --footer-text-dark: #444444;
   --basic-white: #ffffff;
   --basic-gray: #EEEEEE;
+  --social-background-gray: #E1E1E1;
   --basic-red: #FB565A;
   --medium-red: #E74246;
   --extra-red: #D7373B;
@@ -14,30 +16,18 @@
   --extra-yellow: #E5A722;
 }
 
-/* Что это и зачем? Что очистить?
-.page {}
-
-.page-body {}
-*/
-
 /* Global */
 
 body {
-  min-width: 1200px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-dark);
   background-color: var(--basic-white);
-}
-
-.container-description span,
-.container-achievements span {
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 a {
@@ -89,8 +79,6 @@ img {
   display: none;
 }
 
-.slider {}
-
 .offer-slider {
   font-size: 55px;
   line-height: 55px;
@@ -99,8 +87,6 @@ img {
 }
 
 /*Main offers*/
-
-.container-offers {}
 
 .button {
   color: var(--basic-white);
@@ -131,25 +117,29 @@ img {
 }
 
 .button-yellow {
-  background-color: #EFC849;
+  background-color: var(--basic-yellow);
 }
 .button-yellow:hover {
-  background-color: #EAB534;
+  background-color: var(--medium-yellow);
 }
 
 .button-yellow:active {
-  background-color: #E5A722;
+  background-color: var(--extra-yellow);
 }
 
 /*Main description*/
-
-.container-description {}
 
 .container-description h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: var(--basic-black);
+}
+
+.container-description span,
+.container-achievements span {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /*Main article*/
@@ -160,14 +150,12 @@ img {
 
 /*Footer*/
 
-.main-footer {}
-
 .footer-social li {
   list-style: none;
 }
 
 .social-button {
-  background-color: #E1E1E1;
+  background-color: var(--social-background-gray);
 }
 .social-button:hover {
   background-color: var(--medium-red);
@@ -186,7 +174,7 @@ img {
 
 .footer-offer-description {
   line-height: 22px;
-  color: #444444;
+  color: var(--footer-text-dark);
 }
 
 /*Modal window*/
