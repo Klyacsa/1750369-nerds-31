@@ -20,8 +20,8 @@
 
 /* Global */
 
-body {
-  min-width: 1160px;
+.page-body {
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -30,6 +30,11 @@ body {
   font-weight: 400;
   color: var(--basic-dark);
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -45,10 +50,29 @@ img {
   display: none;
 }
 
+/*Grid*/
+
+.page {
+  height: 100%;
+}
+
+/*Center*/
+
+.center {
+  width: 1159.84px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /*Header*/
 
 .main-header {
   background-color: var(--basic-gray);
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: auto 1fr min-content;
 }
 
 .site-menu {
@@ -81,13 +105,6 @@ img {
   color: var(--basic-gray);
 }
 
-.offer-slider {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  color: var(--basic-black);
-}
-
 .catalog-title {
   text-align: center;
   font-size: 55px;
@@ -95,13 +112,41 @@ img {
   line-height: 55px;
 }
 
-.site-menu .market {
+.site-menu .active-page {
   text-decoration: underline;
   text-decoration-color: var(--basic-red);
   text-decoration-style: solid;
 }
 
+/*Slider*/
+
+.slide {
+  min-height: 431px;
+}
+
+.image-slide {
+  float: right;
+}
+
+.offer-slider {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
 /*Main offers*/
+
+.block-border {
+  border-bottom: 2px var(--basic-gray) solid;
+}
+
+.container-offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  padding: 80px 0;
+}
 
 .button {
   color: var(--basic-white);
@@ -144,6 +189,11 @@ img {
 
 /*Main description*/
 
+.container-description {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .container-description h2 {
   font-size: 45px;
   line-height: 45px;
@@ -151,8 +201,7 @@ img {
   color: var(--basic-black);
 }
 
-.container-description span,
-.container-achievements span {
+.container-description span {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -161,9 +210,22 @@ img {
 
 .friends {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 40px;
 }
 
 /*Footer*/
+
+.contacts {
+  padding: 70px 0;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 60px;
+}
 
 .footer-social li {
   list-style: none;
