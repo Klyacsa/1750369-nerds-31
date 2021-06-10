@@ -59,7 +59,7 @@ img {
 /*Center*/
 
 .center {
-  width: 1159.84px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -234,6 +234,7 @@ img {
 .social-button {
   background-color: var(--social-background-gray);
 }
+
 .social-button:hover {
   background-color: var(--medium-red);
 }
