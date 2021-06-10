@@ -110,6 +110,7 @@ img {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+  padding-bottom: 105px;
 }
 
 .site-menu .active-page {
@@ -270,6 +271,22 @@ line-height: 18px;
 }
 
 /*Main catalog*/
+
+.main-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+  margin-top: 55px;
+}
+
+.catalog-filter {
+  grid-column: 1/2;
+}
+
+.catalog-content {
+  grid-column: 2/-1;
+  margin-left: 135px;
+}
 
 .catalog-filter legend,
 .catalog-sorting p {

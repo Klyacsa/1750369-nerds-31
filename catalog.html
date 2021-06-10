@@ -13,14 +13,14 @@
 
   <header class="main-header">
 
-    <nav class="main-nav">
-      <a class="main-header-logo" href="index.html">
+    <nav class="main-nav center">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии Нёрдс">
       </a>
       <ul class="site-menu">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a class="active-page" href="catalog.html">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <a class="header-basket" href="blank.html"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
@@ -30,7 +30,7 @@
 
   </header>
 
-  <main>
+  <main class="main-catalog center">
 
     <section class="catalog-filter">
 
@@ -82,78 +82,80 @@
       </form>
     </section>
 
-    <section class="catalog-sorting">
-      <h2 class="hidden">Управление сортировкой шаблонов</h2>
-      <p>Сортировать</p>
-      <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
-        <li><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Иконка вниз"></li>
-        <li><img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="Иконка вверх"></li>
-      </ul>
-    </section>
+    <section class="catalog-content">
+      <div class="catalog-sorting">
+        <h2 class="hidden">Управление сортировкой шаблонов</h2>
+        <p>Сортировать</p>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По названию</li>
+          <li><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Иконка вниз"></li>
+          <li><img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="Иконка вверх"></li>
+        </ul>
+      </div>
+      <div class="list-templates">
+        <h2 class="hidden">Список шаблонов</h2>
+        <ul>
+          <li>
+            <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <button class="button button-red" type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Шаблон Pink App">
+            <h3>Pink App</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <button class="button button-red" type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop">
+            <h3>Barbershop</h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <button class="button button-red" type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="img/catalog/img-mishka.jpg" width="358" height="578" alt="Шаблон Mishka">
+            <h3>Mishka</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <button class="button button-red" type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="img/catalog/img-aplus.jpg" width="358" height="578" alt="Шаблон Aplus">
+            <h3>A plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <button class="button button-red" type="button">9 900 ₽</button>
+          </li>
+          <li><img src="img/catalog/img-kvast.jpg" width="358" height="578" alt="Шаблон Кваст">
+            <h3>Кваст</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <button class="button button-red" type="button">9 900 ₽</button>
+          </li>
+        </ul>
+        <ul class="pagination">
+          <li>
+            <a class="button-activ">1</a>
+          </li>
+          <li>
+            <a class="button button-gray" href="#">2</a>
+          </li>
+          <li>
+            <a class="button button-gray" href="#">3</a>
+          </li>
+          <li>
+            <a class="button button-gray" href="#">Следующая</a>
+          </li>
+        </ul>
+      </div>
 
-    <section class="list-templates">
-      <h2 class="hidden">Список шаблонов</h2>
-      <ul>
-        <li>
-          <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <button class="button button-red" type="button">9 900 ₽</button>
-        </li>
-        <li>
-          <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Шаблон Pink App">
-          <h3>Pink App</h3>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button class="button button-red" type="button">9 900 ₽</button>
-        </li>
-        <li>
-          <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop">
-          <h3>Barbershop</h3>
-          <p>Сайт салона красоты. Для мужчин, да.</p>
-          <button class="button button-red" type="button">9 900 ₽</button>
-        </li>
-        <li>
-          <img src="img/catalog/img-mishka.jpg" width="358" height="578" alt="Шаблон Mishka">
-          <h3>Mishka</h3>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <button class="button button-red" type="button">9 900 ₽</button>
-        </li>
-        <li>
-          <img src="img/catalog/img-aplus.jpg" width="358" height="578" alt="Шаблон Aplus">
-          <h3>A plus</h3>
-          <p>Лендинг курсов повышения квалификации</p>
-          <button class="button button-red" type="button">9 900 ₽</button>
-        </li>
-        <li><img src="img/catalog/img-kvast.jpg" width="358" height="578" alt="Шаблон Кваст">
-          <h3>Кваст</h3>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <button class="button button-red" type="button">9 900 ₽</button>
-        </li>
-      </ul>
-      <ul class="pagination">
-        <li>
-          <a class="button-activ">1</a>
-        </li>
-        <li>
-          <a class="button button-gray" href="#">2</a>
-        </li>
-        <li>
-          <a class="button button-gray" href="#">3</a>
-        </li>
-        <li>
-          <a class="button button-gray" href="#">Следующая</a>
-        </li>
-      </ul>
     </section>
 
   </main>
 
   <footer class="main-footer">
 
-    <section>
+    <section class="contacts">
       <h2 class="hidden">Контакты дизайн студии</h2>
       <img src="img/footer/map.png" width="1440" height="416" alt="Карта расположения студии">
       <div>
@@ -165,7 +167,7 @@
       </div>
     </section>
 
-    <section class="footer-social">
+    <section class="footer-social center">
       <ul>
         <li>
           <a class="social-button" href="#"><img src="img/footer/vk-icon.svg" width="26.01" height="15" alt="Логотип социальной сети Вконтакте"></a>
@@ -177,8 +179,10 @@
           <a class="social-button" href="#"><img src="img/footer/insta-icon.svg" width="21" height="21" alt="Логотип социальной сети Интаграмм"></a>
         </li>
       </ul>
-      <p class="footer-offer">Давайте дружить, это выгодно!</p>
-      <p class="footer-offer-description">Скидка 10% для друзей из социальных сетей.</p>
+      <div>
+        <p class="footer-offer">Давайте дружить, это выгодно!</p>
+        <p class="footer-offer-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
 
   </footer>
