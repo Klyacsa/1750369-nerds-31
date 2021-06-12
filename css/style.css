@@ -21,9 +21,9 @@
 /* Global */
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -71,12 +71,20 @@ img {
 }
 
 .main-nav {
-  display: grid;
-  grid-template-columns: auto 1fr min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
 }
 
 .site-menu {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 437px;
+
 }
 
 .site-menu a {
@@ -125,15 +133,43 @@ img {
   min-height: 431px;
 }
 
+.slide div {
+  position: absolute;
+  z-index: 2;
+  margin-top: 95px;
+}
+
 .image-slide {
   float: right;
 }
 
-.offer-slider {
+.offer-slide {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
+  width: 538px;
+  padding: 0;
+  margin: 0;
+}
+
+.description-slide {
+  width: 400px;
+}
+
+.slide-1 .description-slide {
+  padding-top: 25px;
+  padding-bottom: 38px;
+}
+
+.slide-2 .description-slide {
+  padding-top: 37px;
+  padding-bottom: 27px;
+}
+
+.slide-1 .description-slide {
+  padding-top: 37px;
+  padding-bottom: 26px;
 }
 
 /*Main offers*/
@@ -192,7 +228,9 @@ img {
 
 .container-description {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 660px 360px;
+  grid-column-gap: 140px;
+  height: 525px;
 }
 
 .container-description h2 {
@@ -200,11 +238,51 @@ img {
   line-height: 45px;
   font-weight: 500;
   color: var(--basic-black);
+  margin-bottom: 32px;
+  margin-top: 73px;
+}
+
+.container-description p {
+  margin-bottom: 40px;
 }
 
 .container-description span {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.achievements {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  justify-items: center;
+}
+
+.achievements img {
+  margin-bottom: 37px;
+  margin-top: 39px;
+}
+
+.achievements-offer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin-top: 31px;
+  margin-bottom: 74px;
+}
+
+.achievements-offer span {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0px;
+  vertical-align: top;
+}
+
+.achievements-offer b {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  vertical-align: top;
 }
 
 /*Main article*/
@@ -218,14 +296,27 @@ img {
 
 /*Footer*/
 
+.main-footer {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .contacts {
   padding: 70px 0;
 }
 
 .footer-social {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 260px 560px;
+  grid-column-gap: 140px;
   padding-bottom: 60px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-social li {
@@ -249,11 +340,15 @@ img {
   font-weight: 700;
   line-height: 36px;
   color: var(--basic-black);
+  margin-bottom: 10px;
 }
 
 .footer-offer-description {
   line-height: 22px;
   color: var(--footer-text-dark);
+  margin: 0;
+  padding: 0;
+
 }
 
 /*Modal window*/
