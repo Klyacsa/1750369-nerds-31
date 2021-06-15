@@ -83,17 +83,19 @@
     </section>
 
     <section class="catalog-content">
+
       <div class="catalog-sorting">
         <h2 class="hidden">Управление сортировкой шаблонов</h2>
         <p>Сортировать</p>
         <ul>
-          <li>По цене</li>
+          <li class="active-sorting">По цене</li>
           <li>По типу</li>
           <li>По названию</li>
-          <li><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Иконка вниз"></li>
+          <li class="active-sorting"><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Иконка вниз"></li>
           <li><img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="Иконка вверх"></li>
         </ul>
-      </div>
+        </div>
+
       <div class="list-templates">
         <h2 class="hidden">Список шаблонов</h2>
         <ul>
@@ -133,7 +135,10 @@
             <button class="button button-red" type="button">9 900 ₽</button>
           </li>
         </ul>
-        <ul class="pagination">
+
+      </div>
+
+        <ul class="catalog-pagination">
           <li>
             <a class="button-activ">1</a>
           </li>
@@ -147,7 +152,7 @@
             <a class="button button-gray" href="#">Следующая</a>
           </li>
         </ul>
-      </div>
+
 
     </section>
 
@@ -168,7 +173,7 @@
     </section>
 
     <section class="footer-social center">
-      <ul>
+      <ul class="social-icon">
         <li>
           <a class="social-button" href="#"><img src="img/footer/vk-icon.svg" width="26.01" height="15" alt="Логотип социальной сети Вконтакте"></a>
         </li>
