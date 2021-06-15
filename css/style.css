@@ -46,8 +46,17 @@ img {
   height: auto;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Grid*/
@@ -79,37 +88,55 @@ img {
 
 .site-menu {
   list-style: none;
+
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+
   width: 437px;
-
+  min-height: 65px;
+  padding: 0;
+  margin: 0;
 }
 
-.site-menu a {
+.site-menu a,
+.header-basket a {
   text-transform: uppercase;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+
+  display: block;
+  padding: 30px 15px;
 }
 
-.site-menu a:hover {
+.header-basket .basket-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+/*  НЕ РАБОТАЕТ
+.basket-link::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+*/
+
+.site-menu a:hover,
+.header-basket a:hover {
   color: var(--basic-red)
 }
 
-.site-menu a:active {
-  color: var(--basic-gray);
-}
-
-.header-basket {
-  text-transform: uppercase;
-  color: var(--basic-black)
-}
-
-.header-basket:hover {
-  color: var(--basic-red);
-}
-
-.header-basket:active {
+.site-menu a:active,
+.header-basket a:active {
   color: var(--basic-gray);
 }
 
@@ -188,6 +215,31 @@ img {
 .button {
   color: var(--basic-white);
   text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+
+.slider .button {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.container-offers .button {
+  padding-left:  39px;
+  padding-right: 40px;
+}
+
+.contacts .button {
+  padding-left:  44px;
+  padding-right: 44px;
+}
+
+.modal .button {
+  padding-left: 83px;
+  padding-right: 83px;
 }
 
 .button-red {
@@ -307,24 +359,30 @@ img {
 
 .footer-social {
   display: grid;
-  grid-template-columns: 260px 560px;
+  grid-template-columns: min-content 1fr;
   grid-column-gap: 140px;
   padding-bottom: 60px;
 }
 
 .social-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .footer-social li {
   list-style: none;
+  width: 81px;
+  height: 81px;
+  background-color: var(--social-background-gray);
+  border-radius: 50%;
 }
 
 .social-button {
-  background-color: var(--social-background-gray);
+
+
+
 }
 
 .social-button:hover {
