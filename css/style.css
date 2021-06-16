@@ -16,6 +16,7 @@
   --basic-yellow: #EFC849;
   --medium-yellow: #EAB534;
   --extra-yellow: #E5A722;
+  --contacts-color: #666666;
 }
 
 /* Global */
@@ -23,7 +24,7 @@
 .page-body {
   min-width: 1160px;
   margin: 0;
-  padding: 0 20px;
+  
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -357,32 +358,65 @@ img {
   padding: 70px 0;
 }
 
+.contacts-block {
+  width: 319px;
+  height: 308px;
+  padding: 49px 50px 47px 50px;
+  margin-left: 140px;
+  background-color: var(--basic-white);
+  border: 1px red solid;
+}
+
+.contacts-block span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contacts-block p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--contacts-color);
+}
+
+.contacts-block a {
+  text-decoration: none;
+  color: var(--contacts-color);
+}
+
 .footer-social {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-column-gap: 140px;
-  padding-bottom: 60px;
-}
-
-.social-icon {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
-.footer-social li {
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 261px;
+}
+
+.footer-social div {
+  margin: 0;
+  margin-left: 139px;
+  padding: 0;
+  height: 81px;
+  width: 547px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 81px;
   height: 81px;
   background-color: var(--social-background-gray);
   border-radius: 50%;
-}
-
-.social-button {
-
-
-
 }
 
 .social-button:hover {
@@ -391,6 +425,10 @@ img {
 
 .social-button:active {
   background-color: var(--extra-red);
+}
+
+.social-button:active path{
+  fill: var(--basic-red);
 }
 
 .footer-offer {
@@ -411,11 +449,31 @@ img {
 
 /*Modal window*/
 
-.modal h2 {
-font-size: 45px;
-font-weight: 700;
-line-height: 53px;
+.modal {
+  width: 960px;
+  height: 590px;
+  padding: 63px 100px 84px 100px;
+  border: 1px black solid;
 }
+
+.modal h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+  }
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.name-item,
+.email-item {
+  width: 360px;
+}
+
+
 
 .label-title {
 font-size: 16px;
