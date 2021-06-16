@@ -24,7 +24,7 @@
 .page-body {
   min-width: 1160px;
   margin: 0;
-  
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -69,8 +69,8 @@ img {
 /*Center*/
 
 .center {
-  width: 1160px;
-  margin: 0 auto;
+  width: 1140px;
+  margin: 0;
   padding: 0 10px;
 }
 
@@ -117,19 +117,17 @@ img {
   padding-left: 50px;
 }
 
-/*  НЕ РАБОТАЕТ
 .basket-link::before {
   content: "";
   position: absolute;
-  left: 25px;
-  top: 25px;
+  left: 15px;
+  top: 37px;
   width: 15px;
   height: 15px;
-  background-image: url("/img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-*/
 
 .site-menu a:hover,
 .header-basket a:hover {
@@ -138,7 +136,7 @@ img {
 
 .site-menu a:active,
 .header-basket a:active {
-  color: var(--basic-gray);
+  color: var(--extra-gray);
 }
 
 .catalog-title {
@@ -295,9 +293,11 @@ img {
   margin-top: 73px;
 }
 
+/* КОСЯК
 .container-description p {
   margin-bottom: 40px;
 }
+*/
 
 .container-description span {
   text-transform: uppercase;
@@ -534,9 +534,7 @@ line-height: 18px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px 42px;
-
   min-width: 760px;
-
 }
 
 .catalog-pagination {
