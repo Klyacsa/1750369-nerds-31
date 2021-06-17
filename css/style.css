@@ -92,7 +92,7 @@ img {
 }
 
 .main-header-logo {
-  padding: 0 0 5px;
+  padding: 0;
   margin: 0;
 }
 
@@ -105,8 +105,8 @@ img {
   flex-wrap: wrap;
 
   width: 437px;
-  min-height: 30px;
   padding: 0;
+  padding-right: 34px;
   margin: 0;
 }
 
@@ -117,7 +117,11 @@ img {
   font-weight: 500;
 
   display: block;
-  padding: 31px 25px 31px 0;
+  padding: 25px 0 15px 15px;
+}
+
+.site-menu a:first-child {
+  padding-left: 0;
 }
 
 .header-basket a {
@@ -127,7 +131,7 @@ img {
   font-weight: 500;
 
   display: block;
-  padding: 25px 0 22px;
+  padding: 33px 0 22px;
 }
 
 .header-basket .basket-link {
@@ -139,7 +143,7 @@ img {
   content: "";
   position: absolute;
   left: 10px;
-  top: 30px;
+  top: 38px;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
@@ -162,13 +166,12 @@ img {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  padding-bottom: 105px;
+  padding-bottom: 73px;
+  padding-top: 30px;
 }
 
 .site-menu .active-page {
-  text-decoration: underline;
-  text-decoration-color: var(--basic-red);
-  text-decoration-style: solid;
+  border-bottom: 2px var(--basic-red) solid;
 }
 
 /*Slider*/
@@ -180,7 +183,7 @@ img {
   width: 1160px;
 }
 
-.slide div {
+.slide-overlay {
   position: absolute;
   z-index: 2;
   margin: 0;
@@ -188,9 +191,41 @@ img {
 }
 
 .image-slide {
-  float: right;
   margin: 0;
   padding: 0;
+  float: right;
+}
+
+.switch-slider {
+  width: 88px;
+  height: 18px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+
+  top: 430px;
+  left: 675px;
+}
+
+.switch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--basic-white);
+}
+
+.switch-active {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--basic-white);
+  border: 2px solid #C1C1C1;
+  box-shadow: 0 0 0 5px var(--basic-white);
 }
 
 .offer-slide {
@@ -200,26 +235,28 @@ img {
   color: var(--basic-black);
   width: 538px;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 68px;
   margin-bottom: 0;
 }
 
 .description-slide {
-  width: 400px;
+  width: 416px;
+  margin: 0;
+  padding: 0;
 }
 
 .slide-1 .description-slide {
-  margin-top: 0;
+  padding: 27px 0 52px;
 }
 
 .slide-2 .description-slide {
-  padding-top: 37px;
-  padding-bottom: 27px;
+  padding-top: 38px;
+  padding-bottom: 41px;
 }
 
-.slide-1 .description-slide {
-  padding-top: 37px;
-  padding-bottom: 26px;
+.slide-3 .description-slide {
+  padding-top: 39px;
+  padding-bottom: 40px;
 }
 
 /*Main offers*/
@@ -243,6 +280,10 @@ img {
 
   padding-top: 17px;
   padding-bottom: 15px;
+}
+
+.button:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .slider .button {
@@ -275,6 +316,7 @@ img {
 
 .button-red:active {
   background-color: var(--extra-red);
+  color: var(--basic-red);
 }
 
 .button-green {
@@ -286,6 +328,7 @@ img {
 
 .button-green:active {
   background-color: var(--extra-green);
+  color: var(--basic-green);
 }
 
 .button-yellow {
@@ -297,6 +340,7 @@ img {
 
 .button-yellow:active {
   background-color: var(--extra-yellow);
+  color: var(--basic-yellow);;
 }
 
 /*Main description*/
@@ -449,6 +493,7 @@ img {
 
 .social-button:active {
   background-color: var(--extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .social-button:active path{
@@ -496,8 +541,6 @@ img {
 .email-item {
   width: 360px;
 }
-
-
 
 .label-title {
 font-size: 16px;
