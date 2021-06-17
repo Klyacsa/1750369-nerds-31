@@ -24,7 +24,7 @@
 .page-body {
   min-width: 1160px;
   margin: 0;
-
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -78,38 +78,56 @@ img {
 
 .main-header {
   background-color: var(--basic-gray);
+  padding: 0;
+  margin: 0;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  width: 1160px;
+  padding: 45px 0 0;
+  margin: 0 auto;
+}
+
+.main-header-logo {
+  padding: 0 0 5px;
+  margin: 0;
 }
 
 .site-menu {
   list-style: none;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
   width: 437px;
-  min-height: 65px;
+  min-height: 30px;
   padding: 0;
   margin: 0;
 }
 
-.site-menu a,
+.site-menu a {
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-size: 16px;
+  font-weight: 500;
+
+  display: block;
+  padding: 31px 25px 31px 0;
+}
+
 .header-basket a {
   text-transform: uppercase;
   color: var(--basic-black);
   font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
 
   display: block;
-  padding: 30px 15px;
+  padding: 25px 0 22px;
 }
 
 .header-basket .basket-link {
@@ -120,8 +138,8 @@ img {
 .basket-link::before {
   content: "";
   position: absolute;
-  left: 15px;
-  top: 37px;
+  left: 10px;
+  top: 30px;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
@@ -156,17 +174,23 @@ img {
 /*Slider*/
 
 .slide {
-  min-height: 431px;
+  height: 431px;
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
 }
 
 .slide div {
   position: absolute;
   z-index: 2;
-  margin-top: 95px;
+  margin: 0;
+  padding: 0;
 }
 
 .image-slide {
   float: right;
+  margin: 0;
+  padding: 0;
 }
 
 .offer-slide {
@@ -176,7 +200,8 @@ img {
   color: var(--basic-black);
   width: 538px;
   padding: 0;
-  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 
 .description-slide {
@@ -184,8 +209,7 @@ img {
 }
 
 .slide-1 .description-slide {
-  padding-top: 25px;
-  padding-bottom: 38px;
+  margin-top: 0;
 }
 
 .slide-2 .description-slide {
