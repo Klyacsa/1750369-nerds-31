@@ -1090,24 +1090,39 @@ line-height: 18px;
 
 .catalog-pagination {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
   list-style: none;
   width: 443px;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-pagination .button-gray {
+  padding-left: 78px;
+  padding-right: 77px;
 }
 
 .catalog-pagination a {
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.catalog-pagination .button-number {
+  padding: 17px 20px 15px;
 }
 
 .catalog-pagination .button-activ {
-  border: var(--basic-gray) 1px solid;
+  padding: 16px 19px 14px;
+  border: var(--basic-gray) 2px solid;
+  border-radius: 3px;
+  background: none;
 }
 
 .button-gray {
