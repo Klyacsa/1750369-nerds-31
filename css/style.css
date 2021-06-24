@@ -540,6 +540,10 @@ img {
 
 /*Footer*/
 
+.main-footer {
+  margin: 0;
+  padding: 0;
+}
 .contacts {
   margin: 80px 0 33px;
   padding: 0;
@@ -656,7 +660,7 @@ img {
   padding: 63px 100px 84px 100px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   background-color: var(--basic-white);
-  z-index: 10;  
+  z-index: 10;
 }
 
 .modal-close {
@@ -698,7 +702,7 @@ img {
 
 .modal-close::after {
   transform: rotate(-45deg);
-}   
+}
 
 .modal h2 {
   font-size: 45px;
@@ -752,7 +756,7 @@ img {
 .label-title {
 font-size: 16px;
 font-weight: 700;
-line-height: 18px;  
+line-height: 18px;
 }
 
 .name-item input,
@@ -1169,7 +1173,7 @@ line-height: 18px;
   display: none;
 }
 
-.card-templates:focus .offer-templates {
+.card-templates:hover .offer-templates {
   display: block;
 }
 
@@ -1203,7 +1207,7 @@ line-height: 18px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  padding: 0;
+  padding: 0 0 10px;
   margin: 0;
 }
 
