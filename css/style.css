@@ -285,7 +285,6 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
   padding: 80px 60px 92px 0;
-  width: 1100px;
 }
 
 .container-offers img {
@@ -643,6 +642,16 @@ img {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   background-color: var(--basic-white);
   z-index: 10;
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal .button {
@@ -1123,6 +1132,10 @@ line-height: 18px;
   cursor: pointer;
 }
 
+.card-templates:hover {
+filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+
 .card-templates::before {
   content: "";
   position: absolute;
@@ -1231,4 +1244,46 @@ line-height: 18px;
 
 .button-gray:active {
   background-color: var(--extra-gray);
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
