@@ -116,7 +116,7 @@
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
           рук, как роботы.</p>
         <span>Выполняем заказы на разработку:</span>
-        <ul class="list-about-us">
+        <ul class="about-us-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -124,30 +124,21 @@
       </div>
 
       <div class="achievements">
-        <img src="img/index/logo-body.png" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">   
+        <img src="img/index/logo-body.png" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
         <table class="achievements-offer">
           <caption>с 2004 года Любим точность во всем:</caption>
           <tr>
-            <th>
-              146<span class="percentages">%</span>
-            </th>
-            <th>
-              100<span class="percentages">%</span>
-            </th>
-            <th>
-              50<span class="percentages">%</span>
-            </th>
+            <th class="number">146</th>
+            <th class="percentages">%</th>
+            <th class="number">100</th>
+            <th class="percentages">%</th>
+            <th class="number">50</th>
+            <th class="percentages">%</th>
           </tr>
           <tr>
-            <td>
-              Уровень самоотдачи
-            </td>
-            <td>
-              Соблюдение сроков
-            </td>
-            <td>
-              Минимальная предоплата
-            </td>
+            <td colspan="2">Уровень самоотдачи</td>
+            <td colspan="2">Соблюдение сроков</td>
+            <td colspan="2">Минимальная предоплата</td>
           </tr>
         </table>
       </div>
@@ -169,7 +160,7 @@
         </li>
         <li>
           <a href="#">
-            <img src="img/index/logo-pink.svg"width="209" height="90" alt="Логотип Пинк">
+            <img src="img/index/logo-pink.svg" width="209" height="90" alt="Логотип Пинк">
           </a>
         </li>
         <li>
@@ -241,7 +232,7 @@
 
   </footer>
 
-  <section class="modal">
+  <section class="modal visually-hidden">
 
     <h2>Напишите нам</h2>
 
@@ -249,7 +240,7 @@
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="name-item">
         <label class="label-title" for="form-name">Ваше имя:</label>
-        <input id="form-name" type="name" name="username" placeholder="Имя Фамилия" required>
+        <input id="form-name" type="text" name="username" placeholder="Имя Фамилия" required>
       </p>
       <p class="email-item">
         <label class="label-title" for="form-email">Ваш email:</label>
@@ -257,7 +248,7 @@
       </p>
       <p class="massage-item">
         <label class="label-title" for="form-message">Текст письма:</label>
-        <textarea id="form-message" type="text" name="message" placeholder="В свободной форме"></textarea>
+        <textarea id="form-message" name="message" placeholder="В свободной форме"></textarea>
       </p>
       <input class="button button-red" type="submit" value="Отправить">
     </form>

@@ -407,7 +407,7 @@ img {
   padding: 33px 0 39px;
 }
 
-.list-about-us {
+.about-us-list {
   list-style: none;
   padding: 25px 35px 0;
   margin: 0;
@@ -416,15 +416,15 @@ img {
   justify-content: space-between;
 }
 
-.list-about-us li {
+.about-us-list li {
   position: relative;
 }
 
-.list-about-us li:not(:last-child) {
+.about-us-list li:not(:last-child) {
   padding-bottom: 24px;
 }
 
-.list-about-us li::before {
+.about-us-list li::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -440,27 +440,27 @@ img {
 }
 
 .achievements img {
-  margin: 0 0 40px;
+  margin: 0 0 37px;
 }
 
 .achievements-offer {
-  border-spacing: 10px;
-  margin: -10px;
+  border-spacing: 7px 11px;
+  margin: -7px;
 }
 
 .achievements-offer caption {
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
-.achievements-offer th {
+.achievements-offer .number {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
   color: var(--basic-black);
   text-align: left;
-  padding: 0 5px 3px 0;
+  padding: 0;
 }
 
 .achievements-offer .percentages {
@@ -468,6 +468,8 @@ img {
   font-weight: 700;
   line-height: 40px;
   vertical-align: top;
+  text-align: left;
+  padding-left: -115px;
 }
 
 .achievements-offer td {
@@ -642,7 +644,6 @@ img {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   background-color: var(--basic-white);
   z-index: 10;
-  display: none;
 }
 
 .modal-show {
