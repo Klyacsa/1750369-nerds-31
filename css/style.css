@@ -23,7 +23,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1140px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -32,7 +32,6 @@
   font-weight: 400;
   color: var(--basic-dark);
   background-color: var(--basic-white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -409,7 +408,7 @@ img {
 
 .about-us-list {
   list-style: none;
-  padding: 25px 35px 0;
+  padding: 23px 35px 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -436,31 +435,34 @@ img {
 
 .achievements {
   padding: 0;
-  margin: 39px 0 70px;
+  margin: 39px 0 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .achievements img {
-  margin: 0 0 37px;
+  margin: 0 0 22px;
+}
+
+.achievements span {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
 
 .achievements-offer {
-  border-spacing: 7px 11px;
-  margin: -7px;
+  display: flex;
 }
 
-.achievements-offer caption {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.achievements-offer .number {
+.achievements-offer dt {
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
   color: var(--basic-black);
-  text-align: left;
-  padding: 0;
+  vertical-align: top;
+  padding: 0 23px 12px 0;
+  margin: 0;
 }
 
 .achievements-offer .percentages {
@@ -468,11 +470,9 @@ img {
   font-weight: 700;
   line-height: 40px;
   vertical-align: top;
-  text-align: left;
-  padding-left: -115px;
 }
 
-.achievements-offer td {
+.achievements-offer dd {
   padding: 0;
   margin: 0;
   line-height: 18px;
@@ -485,7 +485,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 47px 25px 36px 30px;
+  padding: 47px 25px 40px 30px;
   margin: 0;
 }
 
