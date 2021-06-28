@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Волдаев](https://up.htmlacademy.ru/htmlcss/31/user/1750369).
-* Наставник: [Валерий Крукович](https://htmlacademy.ru/profile/id303175).
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
