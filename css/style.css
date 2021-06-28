@@ -645,6 +645,7 @@ img {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   background-color: var(--basic-white);
   z-index: 10;
+  display: none;
 }
 
 .modal-show {
@@ -749,12 +750,23 @@ img {
   height: 86px;
   margin: 0;
   padding: 16px;
+  resize: none;
 }
 
 .label-title {
 font-size: 16px;
 font-weight: 700;
 line-height: 18px;
+}
+
+.name-item input:focus,
+.email-item input:focus,
+.massage-item textarea:focus {
+  border: 2px solid var(--basic-black);
+}
+
+:focus::-webkit-input-placeholder {
+  color: var(--basic-black);
 }
 
 .name-item input:invalid,
@@ -788,16 +800,6 @@ line-height: 18px;
 
 :hover::-webkit-input-placeholder {
   color: #B4B9BB;
-}
-
-.name-item input:focus,
-.email-item input:focus,
-.massage-item textarea:focus {
-  border: 2px solid var(--basic-black);
-}
-
-:focus::-webkit-input-placeholder {
-  color: var(--basic-black);
 }
 
 /*Main catalog*/
@@ -974,8 +976,8 @@ line-height: 18px;
 .input-radio:checked + label::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -31px;
+  top: 1px;
+  left: -30px;
   width: 8px;
   height: 8px;
   background-color: var(--filter-input-color);
@@ -1005,8 +1007,8 @@ line-height: 18px;
   position: absolute;
   top: -2px;
   left: -36px;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   border: 2px var(--filter-input-color) solid;
   border-radius: 2px;
   opacity: 0.3;
