@@ -536,6 +536,10 @@ img {
   margin: 0 0 43px;
 }
 
+.map iframe {
+  width: 100%;
+}
+
 .contacts-block {
   padding: 49px 50px 60px 50px;
   background-color: var(--basic-white);
