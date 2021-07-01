@@ -408,7 +408,7 @@ img {
 
 .about-us-list {
   list-style: none;
-  padding: 23px 35px 0;
+  padding: 25px 35px 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -435,14 +435,14 @@ img {
 
 .achievements {
   padding: 0;
-  margin: 39px 0 58px;
+  margin: 39px 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .achievements img {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
 }
 
 .achievements span {
@@ -461,7 +461,7 @@ img {
   line-height: 64px;
   color: var(--basic-black);
   vertical-align: top;
-  padding: 0 23px 12px 0;
+  padding: 0 23px 10px 0;
   margin: 0;
 }
 
@@ -559,7 +559,7 @@ img {
   font-weight: 400;
   line-height: 18px;
   color: var(--contacts-color);
-  padding: 23px 0 50px;
+  padding: 23px 0 53px;
   margin: 0;
 }
 
@@ -591,7 +591,7 @@ img {
 .footer-social div {
   margin: 0;
   width: 547px;
-  padding: 30px 0 0 139px;
+  padding: 18px 0 0 139px;
 }
 
 .social-button {
@@ -813,7 +813,7 @@ line-height: 18px;
   grid-template-columns: min-content 1fr;
   column-gap: 140px;
   margin-top: 55px;
-  margin-bottom: 63px;
+  margin-bottom: 37px;
 }
 
 /*Catalog filter*/
@@ -1131,7 +1131,7 @@ line-height: 18px;
   display: grid;
   grid-template-columns: 360px 360px;
   grid-gap: 65px 42px;
-  margin: 0 0 66px;
+  margin: 0 0 64px;
   padding: 0;
   list-style: none;
 }
@@ -1218,7 +1218,7 @@ filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 0 10px;
+  padding: 0;
   margin: 0;
 }
 
